@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>LESSON</title>
+        <meta name="description" content="HTMLの基本を勉強するページです">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body>
+        <h1>擬似要素・擬似クラス</h1>
+        
+        <section class="giji_section">
+            <h2>擬似要素 :before :after</h2>
+            <p>各項目の1文字目の前に、好きな文字を入れよう。</p>
+            <ul class="before_content">
+                <li class="before_list">あああああ</li>
+                <li class="before_list">いいいいい</li>
+                <li class="before_list">うううううううう</li>
+                <li class="before_list">えええええええ</li>
+                <li class="before_list">おおお</li>
+            </ul>
+            
+            <p>各項目の1文字目の前に矢印を入れよう。</p>
+            <ul class="before_arrow">
+                <li class="list_arrow">あああああ</li>
+                <li class="list_arrow">いいいいい</li>
+                <li class="list_arrow">うううううううう</li>
+                <li class="list_arrow">えええええええ</li>
+                <li class="list_arrow">おおお</li>
+            </ul>
+            
+            <p>各項目の1文字目の前と最後の文字の後に矢印を入れよう。</p>
+            <ul class="before_arrow after_arrow">
+                <li class="front_rear_arrow">あああああ</li>
+                <li class="front_rear_arrow">いいいいい</li>
+                <li class="front_rear_arrow">うううううううう</li>
+                <li class="front_rear_arrow">えええええええ</li>
+                <li class="front_rear_arrow">おおお</li>
+            </ul>
+            
+        </section>
+        
+        <section class="first_last_section">
+            <h2>擬似クラス :first-child :last-child</h2>
+            <p>最初の項目だけ文字の色を変えよう。</p>
+            <p>すべての項目の上に線を引き、最後の項目だけ上下に線を引こう。</p>
+            <ul class="first_last_box">
+                <li class="beginning_end">あああああ</li>
+                <li class="beginning_end">いいいいい</li>
+                <li class="beginning_end">うううううううう</li>
+                <li class="beginning_end">えええええええ</li>
+                <li class="beginning_end">おおお</li>
+            </ul>
+        </section>
+        
+        <section class="nth_section">
+            <h2>擬似クラス :nth-child(●●)</h2>
+            <p>display: flex; を使って画像と文章を左右に振り分け、1セットずつ左右を入れ替えよう。</p>
+            <div class="item_box">
+                <!--1セット-->
+                <article class="item">
+                    <div class="txt_wrap">
+                        <p>サンプルテキストです。ここに文章が入ります。文字数や行間などを確認するための文章です。</p>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="images/cheb.png" alt="イメージ">
+                    </div>
+                </article>
+                <!--1セット-->
+                
+                <!--1セット-->
+                <article class="item">
+                    <div class="txt_wrap">
+                        <p>サンプルテキストです。ここに文章が入ります。文字数や行間などを確認するための文章です。</p>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="images/ajisai.jpg" alt="イメージ">
+                    </div>
+                </article>
+                <!--1セット-->
+                
+                <!--1セット-->
+                <article class="item">
+                    <div class="txt_wrap">
+                        <p>サンプルテキストです。ここに文章が入ります。文字数や行間などを確認するための文章です。</p>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="images/himawari.jpg" alt="イメージ">
+                    </div>
+                </article>
+                <!--1セット-->
+                
+                <!--1セット-->
+                <article class="item">
+                    <div class="txt_wrap">
+                        <p>サンプルテキストです。ここに文章が入ります。文字数や行間などを確認するための文章です。</p>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="images/bg.jpg" alt="イメージ">
+                    </div>
+                </article>
+                <!--1セット-->
+                
+                <!--1セット-->
+                <article class="item">
+                    <div class="txt_wrap">
+                        <p>サンプルテキストです。ここに文章が入ります。文字数や行間などを確認するための文章です。</p>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="images/cheb.png" alt="イメージ">
+                    </div>
+                </article>
+                <!--1セット-->
+                
+                
+            </div>
+
+        </section>
+        
+        <footer style="text-align: center">
+            <p class="copy">&copy;Web Design Class</p>
+        </footer>
+    </body>
+</html>

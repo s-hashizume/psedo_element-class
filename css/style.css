@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+/*---------- element ------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------- layout ------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #eee;
+}
+
+section {
+    padding: 2rem 0;
+    margin: 0 0 3rem;
+    background: #fff;
+}
+
+.copy {
+    text-align: center;
+}
+
+
+/*---------- main ------------*/
+
+.before_list::before {
+    content: 'Hello World';
+}
+
+.list_arrow::before {
+    content: '⇨';
+}
+
+.front_rear_arrow::before {
+    content: '⇨';
+}
+.front_rear_arrow::after {
+    content: '⇦';
+}
+
+.beginning_end:first-child {
+    color: #ff6c94;
+}
+
+.beginning_end {
+    border-top: #00a5dd solid 2px;
+}
+
+.beginning_end:last-child {
+    border-bottom: #00a5dd solid 2px;
+}
+
+.item {
+    display: flex;
+}
+
+.item:nth-child(even) {/*------------考えても分からなかった箇所---------------*/
+    flex-direction: row-reverse;
+}
+
+.txt_wrap {
+    color: #ff6c94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt_wrap p {
+    margin: auto;
+}
