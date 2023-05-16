@@ -48,19 +48,33 @@ section {
 
 /*---------- main ------------*/
 
-.before_list::before {
+.before_content li::before {
     content: 'Hello World';
 }
 
-.list_arrow::before {
+.before_arrow li::before {
     content: '⇨';
 }
 
-.front_rear_arrow::before {
-    content: '⇨';
+.before_arrow_after_arrow li::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid black;
+    display: inline-block;
+    margin-left: 5px;
 }
-.front_rear_arrow::after {
-    content: '⇦';
+.before_arrow_after_arrow li::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid black;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .beginning_end:first-child {
